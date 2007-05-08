@@ -1,4 +1,4 @@
 category: Graphics
-requires: cygwin libimlib2
+requires: cygwin libimlib2 libedb1 libeet0
 sdesc: "Additional Imlib2 loaders"
 ldesc: "Additional loaders for the Imlib2 image library"
