@@ -1,5 +1,5 @@
---- origsrc/imlib2_loaders-1.4.1/configure.in	2008-06-09 22:55:55.000000000 -0500
-+++ src/imlib2_loaders-1.4.1/configure.in	2008-06-11 00:12:05.953125000 -0500
+--- origsrc/imlib2_loaders-1.4.2/configure.ac	2008-06-09 22:55:55.000000000 -0500
++++ src/imlib2_loaders-1.4.2/configure.ac	2008-06-11 00:12:05.953125000 -0500
 @@ -124,6 +124,7 @@
    fi
  ])
