@@ -1,4 +1,0 @@
-category: Graphics
-requires: libImlib2_1 libeet1 zlib0
-sdesc: "Additional Imlib2 loaders"
-ldesc: "Additional loaders for the Imlib2 image library"

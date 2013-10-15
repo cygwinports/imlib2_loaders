@@ -1,0 +1,11 @@
+NAME="imlib2_loaders"
+VERSION=1.4.5
+RELEASE=1
+CATEGORY="Graphics"
+SUMMARY="Additional Imlib2 loaders"
+DESCRIPTION="Additional loaders for the Imlib2 image library"
+HOMEPAGE="http://www.enlightenment.org/"
+SRC_URI="mirror://sourceforge/enlightenment/${NAME}-${VERSION}.tar.gz"
+PATCH_URI="1.4.2-no-undefined.patch"
+
+DOCS="COPYING-PLAIN COPYING.loader_xcf"

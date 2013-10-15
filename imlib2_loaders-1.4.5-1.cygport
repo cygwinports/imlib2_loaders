@@ -1,8 +1,0 @@
-DESCRIPTION="Enlightenment image library additional loaders"
-HOMEPAGE="http://www.enlightenment.org/"
-SRC_URI="mirror://sourceforge/enlightenment/${P}.tar.gz"
-PATCH_URI="1.4.2-no-undefined.patch"
-
-CYGCONF_ARGS="--disable-static"
-
-DOCS="COPYING-PLAIN COPYING.loader_xcf"
