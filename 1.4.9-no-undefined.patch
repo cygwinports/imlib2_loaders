@@ -1,0 +1,43 @@
+--- origsrc/imlib2_loaders-1.4.9/configure.ac	2016-04-29 10:57:48.000000000 -0500
++++ src/imlib2_loaders-1.4.9/configure.ac	2016-11-10 03:18:57.040595100 -0600
+@@ -102,7 +102,7 @@ AC_ARG_ENABLE(xcf,
+ ])
+ 
+ 
+-dnl PKG_CHECK_MODULES(IMLIB2, imlib2)
++PKG_CHECK_MODULES(IMLIB2, imlib2)
+ 
+ found_eet=no
+ if test "x$eet" != "xno" ; then
+--- origsrc/imlib2_loaders-1.4.9/src/modules/loaders/Makefile.am	2016-03-12 01:15:27.000000000 -0600
++++ src/imlib2_loaders-1.4.9/src/modules/loaders/Makefile.am	2016-11-10 03:26:49.157685400 -0600
+@@ -17,21 +17,21 @@ ani.la
+ 
+ eet_la_SOURCES      = loader_eet.c common.h image.h
+ eet_la_CPPFLAGS     = @EET_CFLAGS@
+-eet_la_LDFLAGS      = -module -avoid-version
+-eet_la_LIBADD       = @EET_LIBS@
++eet_la_LDFLAGS      = -module -avoid-version -no-undefined
++eet_la_LIBADD       = @EET_LIBS@ $(IMLIB2_LIBS)
+ eet_la_LIBTOOLFLAGS = --tag=disable-static
+ 
+ xcf_la_SOURCES      = loader_xcf.c loader_xcf_pixelfuncs.c image.h common.h color_values.h
+-xcf_la_LDFLAGS      = -module -avoid-version
+-xcf_la_LIBADD       =
++xcf_la_LDFLAGS      = -module -avoid-version -no-undefined
++xcf_la_LIBADD       = $(IMLIB2_LIBS)
+ xcf_la_LIBTOOLFLAGS = --tag=disable-static
+ 
+ ico_la_SOURCES      = loader_ico.c common.h image.h
+-ico_la_LDFLAGS      = -module -avoid-version
+-ico_la_LIBADD       =
++ico_la_LDFLAGS      = -module -avoid-version -no-undefined
++ico_la_LIBADD       = $(IMLIB2_LIBS)
+ ico_la_LIBTOOLFLAGS = --tag=disable-static
+ 
+ ani_la_SOURCES      = loader_ani.c common.h image.h
+-ani_la_LDFLAGS      = -module -avoid-version
+-ani_la_LIBADD       =
++ani_la_LDFLAGS      = -module -avoid-version -no-undefined
++ani_la_LIBADD       = $(IMLIB2_LIBS)
+ ani_la_LIBTOOLFLAGS = --tag=disable-static
