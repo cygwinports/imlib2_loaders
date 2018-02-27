@@ -1,5 +1,5 @@
 NAME="imlib2_loaders"
-VERSION=1.4.9
+VERSION=1.4.10
 RELEASE=1
 CATEGORY="Graphics"
 SUMMARY="Additional Imlib2 loaders"
